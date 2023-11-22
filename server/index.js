@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/_api',pathRouter);
 
-console.log("path "+)
+//console.log("path "+)
 let dotenv = require('dotenv').config({path:__dirname+'/.env'})
 console.log(dotenv);
 
@@ -21,4 +21,4 @@ mongoose.connect(process.env['MONGODB_URL'])
 
 
 
-app.listen(3000,()=>{console.log('server started on 3000',{path:__dirname})})
+app.listen(3000,()=>{console.log('server started on 6000',{path:__dirname})})
